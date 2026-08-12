@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Flatbed Support — Jonesco</title>
+  <meta name="description" content="Help and support for Flatbed, a personal issue tracker for macOS.">
+  <style>
+    :root { color-scheme: light dark; --bg:#f7f5f1; --panel:#fffdf9; --text:#171716; --muted:#68645e; --line:#dcd7ce; --accent:#eb5b3d; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#171716; --panel:#201f1d; --text:#f5f2eb; --muted:#aaa59c; --line:#3b3935; --accent:#ff795c; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 40px)); margin:0 auto; padding:72px 0 96px; }
+    header { margin-bottom:48px; }
+    .eyebrow { color:var(--accent); font-size:14px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { margin:.25rem 0 .5rem; font-size:clamp(40px,7vw,68px); line-height:1.02; letter-spacing:-.045em; }
+    .lede { max-width:650px; color:var(--muted); font-size:20px; }
+    article { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:clamp(24px,5vw,48px); box-shadow:0 16px 50px rgba(0,0,0,.05); }
+    h2 { margin:2.1rem 0 .45rem; font-size:24px; letter-spacing:-.02em; }
+    h2:first-child { margin-top:0; }
+    p, ul { margin:.5rem 0 1rem; }
+    li + li { margin-top:.45rem; }
+    a { color:inherit; text-decoration-color:var(--accent); text-underline-offset:3px; }
+    .contact { display:inline-block; margin-top:.35rem; padding:.7rem 1rem; border-radius:999px; background:var(--accent); color:#fff; font-weight:700; text-decoration:none; }
+    footer { color:var(--muted); margin-top:28px; font-size:15px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Flatbed for macOS</div>
+      <h1>How can we help?</h1>
+      <p class="lede">Flatbed is a lightweight personal issue tracker for moving work from an idea to done.</p>
+    </header>
+    <article>
+      <h2>Getting started</h2>
+      <ul>
+        <li>Click the plus button to create an issue.</li>
+        <li>Add notes, checklist steps, and related links in the issue detail.</li>
+        <li>Move work through Exploring, Working, Reviewing, and Done.</li>
+        <li>Use search and status filters to find what you need.</li>
+      </ul>
+
+      <h2>Does Flatbed require an account?</h2>
+      <p>No. Flatbed has no separate account or team setup. Your Mac and Apple account handle local storage and optional private iCloud sync.</p>
+
+      <h2>How does iCloud sync work?</h2>
+      <p>When iCloud is available, Flatbed syncs issues through your private iCloud database. Make sure you are signed into the same Apple account and iCloud Drive is enabled on each Mac. If iCloud is unavailable, Flatbed continues with local storage.</p>
+
+      <h2>How do I back up my work?</h2>
+      <p>Use <strong>File → Export Backup</strong> to save a JSON backup at a location you choose. Use <strong>File → Import Backup</strong> to restore a compatible Flatbed backup.</p>
+
+      <h2>What macOS version is required?</h2>
+      <p>Flatbed requires macOS 14 Sonoma or later.</p>
+
+      <h2>Contact support</h2>
+      <p>If you run into a problem, include your macOS version and a short description of what happened. Please do not email private issue content unless it is necessary to explain the problem.</p>
+      <a class="contact" href="mailto:wes@jonesco.com?subject=Flatbed%20Support">Email Flatbed Support</a>
+    </article>
+    <footer>© 2026 Jonesco Worldwide, LLC · <a href="/flatbed-privacy/">Privacy Policy</a></footer>
+  </main>
+</body>
+</html>
